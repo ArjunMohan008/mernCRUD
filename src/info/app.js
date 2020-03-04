@@ -50,7 +50,6 @@ class App extends React.Component{
     }
 
     myDel = data => {
-        console.log(data);
         var options = window.confirm(`Are you sure to delete ${data.Name}?`)
         if(options){
             axios

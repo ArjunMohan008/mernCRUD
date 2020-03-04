@@ -7,7 +7,6 @@ const cors = require('cors');
 
 // Middle ware
 app.use(cors());
-
 app.use(morgan("dev"));
 
 // body-parser
@@ -22,7 +21,7 @@ app.listen(5000, ()=> {
     console.log("Server Started on 5000");
 })
 
-// Db connection
+// DB connection
 mongoose.connect('mongodb://localhost:27017/mernCRUD', {useNewUrlParser: true, useUnifiedTopology: true}, (err)=>{
     if(!err){
         console.log('DB Connected Successfully!!!');

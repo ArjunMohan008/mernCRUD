@@ -57,7 +57,6 @@ class InfoForm extends React.Component{
         }
     }
     
-
     render() {
         return (
             <form onSubmit={this.infoSubmit} autoComplete="off">
@@ -85,7 +84,7 @@ class InfoForm extends React.Component{
                     value = {this.state.City}
                     />
                 </div>
-        <button type="submit" className="btn btn-primary">{this.state.isEdit ? "Update" : "Create"}</button>
+            <button type="submit" className="btn btn-primary">{this.state.isEdit ? "Update" : "Create"}</button>
         </form>
         );
     }
